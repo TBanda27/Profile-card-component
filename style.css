@@ -12,8 +12,9 @@
 }
 body {
   background: var(--dark-cyan);
-  position: relative;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow: clip;
 }
 
 ul {
@@ -47,26 +48,32 @@ h1 span {
 p {
   color: var(--dark-gray);
 }
-
 .bg-pattern-top {
   position: absolute;
-  bottom: 25%;
+  /* width: 50%; */
+  height: auto;
   right: 50%;
-  /* height: 50%;
-  width: 50%; */
+  bottom: 40%;
+  overflow: hidden;
   z-index: -1;
 }
 .bg-pattern-bottom {
   position: absolute;
   left: 50%;
-  /* top: 75%; */
-  top: 25%;
+  top: 35%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  /* overflow: clip; */
+
   z-index: -1;
 }
 section {
-  margin-top: 5rem !important;
+  /* margin-top: 5rem !important; */
+  max-height: 90%;
   max-width: 350px;
-  margin: auto;
+  margin: 5rem auto;
+  justify-content: center;
   text-align: center;
   background: white;
   border-radius: 10px;
@@ -93,3 +100,18 @@ section {
 .horizontal-rule {
   border-bottom: 0.1% solid var(--dark-gray);
 }
+
+/* .bg-pattern-top {
+  position: absolute;
+  bottom: 25%;
+  right: 50%;
+  overflow: hidden;
+  z-index: -1;
+}
+.bg-pattern-bottom {
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  top: 25%;
+  z-index: -1;
+} */
