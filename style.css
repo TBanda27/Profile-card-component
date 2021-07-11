@@ -69,10 +69,9 @@ p {
   z-index: -1;
 }
 section {
-  /* margin-top: 5rem !important; */
-  max-height: 90%;
+  margin: 3rem auto !important;
   max-width: 350px;
-  margin: 5rem auto;
+  margin: auto;
   justify-content: center;
   text-align: center;
   background: white;
@@ -100,18 +99,3 @@ section {
 .horizontal-rule {
   border-bottom: 0.1% solid var(--dark-gray);
 }
-
-/* .bg-pattern-top {
-  position: absolute;
-  bottom: 25%;
-  right: 50%;
-  overflow: hidden;
-  z-index: -1;
-}
-.bg-pattern-bottom {
-  position: absolute;
-  overflow: hidden;
-  left: 50%;
-  top: 25%;
-  z-index: -1;
-} */
